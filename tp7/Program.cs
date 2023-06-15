@@ -30,13 +30,43 @@ while (control2)
             } while (numString != " ");
             break;
         case '2':
-
+            Console.WriteLine("\ningrese el numero a restar");
+            do
+            {
+                numString = Console.ReadLine();
+                control = double.TryParse(numString, out dato);
+                if (control)
+                {
+                    Ndato.Restar(dato);
+                    Console.WriteLine("El Resultado es: " + Ndato.Resultado);
+                }
+            } while (numString != " ");
             break;
         case '3':
-
+            Console.WriteLine("\ningrese el numero a multiplicar");
+            do
+            {
+                numString = Console.ReadLine();
+                control = double.TryParse(numString, out dato);
+                if (control)
+                {
+                    Ndato.Multiplicar(dato);
+                    Console.WriteLine("El Resultado es: " + Ndato.Resultado);
+                }
+            } while (numString != " ");
             break;
         case '4':
-
+            Console.WriteLine("\ningrese el numero a dividir");
+            do
+            {
+                numString = Console.ReadLine();
+                control = double.TryParse(numString, out dato);
+                if (control)
+                {
+                    Ndato.Dividir(dato);
+                    Console.WriteLine("El Resultado es: " + Ndato.Resultado);
+                }
+            } while (numString != " ");
             break;
         case '5':
             Ndato.Limpiar();
